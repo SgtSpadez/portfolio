@@ -88,7 +88,7 @@ h1, h2 {
 }
 
 /* line 14, ../sass/partials/_typography.sass */
-h1 {
+h1, h5 {
   display: inline;
 }
 
@@ -170,6 +170,22 @@ header {
 /* line 11, ../sass/partials/_content.sass */
 .white-section {
   text-align: center;
+}
+
+/* line 14, ../sass/partials/_content.sass */
+.column-3 {
+  display: inline;
+  width: 33.333%;
+}
+/* line 17, ../sass/partials/_content.sass */
+.column-3 img {
+  max-width: 33.333%;
+}
+
+/* line 20, ../sass/partials/_content.sass */
+.image-caption.container {
+  display: inline;
+  overflow: hidden;
 }
 
 /* --- Figures --- */
