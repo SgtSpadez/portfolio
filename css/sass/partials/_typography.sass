@@ -7,10 +7,30 @@ body
   font-size: $base-font-size
   line-height: $base-line-height
 
-h1
-  display: inline
+h1, h2
   font-family: $header-font-family
   font-weight: $header-font-weight
+
+h1
+  display: inline
+
+h2
+  font-size: 20px
+  font-weight: $black
+  text-transform: uppercase
+  letter-spacing: 3px
+  margin: 45px 0 45px 0
+  &:before
+    background-color: $primary-grey
+    content: ""
+    display: inline-block
+    height: 2px
+    position: relative
+    vertical-align: middle
+    width: 125px
+    margin-left: -125px
+    left: -1em
+
 
 a
   color: inherit
