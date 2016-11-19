@@ -135,6 +135,12 @@ header {
   margin: 0 auto;
 }
 
+/* line 7, ../sass/partials/_content.sass */
+.hero {
+  height: 800px;
+  background-image: url("../../images/white-dress-flamingo.jpg");
+}
+
 /* --- Figures --- */
 /* --- Form --- */
 /* --- Buttons --- */
