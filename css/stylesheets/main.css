@@ -157,35 +157,41 @@ header {
 /* --- Content --- */
 /* line 3, ../sass/partials/_content.sass */
 .container {
-  max-width: 1200px;
+  max-width: 1180px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* line 7, ../sass/partials/_content.sass */
+/* line 8, ../sass/partials/_content.sass */
 .hero {
   height: 800px;
   background-image: url("../../images/white-dress-flamingo.jpg");
 }
 
-/* line 11, ../sass/partials/_content.sass */
+/* line 12, ../sass/partials/_content.sass */
 .white-section {
   text-align: center;
 }
 
-/* line 14, ../sass/partials/_content.sass */
-.column-3 {
-  display: inline;
-  width: 33.333%;
-}
-/* line 17, ../sass/partials/_content.sass */
-.column-3 img {
-  max-width: 33.333%;
+/* line 15, ../sass/partials/_content.sass */
+.flex-container {
+  display: flex;
 }
 
-/* line 20, ../sass/partials/_content.sass */
-.image-caption.container {
-  display: inline;
+/* line 18, ../sass/partials/_content.sass */
+.image-container {
+  margin-right: 20px;
+  margin-top: 20px;
+  max-height: 386.667px;
   overflow: hidden;
+}
+/* line 23, ../sass/partials/_content.sass */
+.image-container:last-child {
+  margin-right: 0px;
+}
+/* line 25, ../sass/partials/_content.sass */
+.image-container img {
+  max-width: 386.6667px;
 }
 
 /* --- Figures --- */
