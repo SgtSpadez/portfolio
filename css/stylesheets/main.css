@@ -82,7 +82,7 @@ body {
 }
 
 /* line 10, ../sass/partials/_typography.sass */
-h1, h2, h5 {
+h1, h2, h4, h5 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
 }
@@ -161,46 +161,50 @@ header {
 
 /* --- Content --- */
 /* line 3, ../sass/partials/_content.sass */
+section {
+  text-align: center;
+}
+
+/* line 6, ../sass/partials/_content.sass */
 .container {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* line 8, ../sass/partials/_content.sass */
+/* line 11, ../sass/partials/_content.sass */
 .hero {
   height: 800px;
   background-image: url("../../images/white-dress-flamingo.jpg");
 }
 
-/* line 12, ../sass/partials/_content.sass */
-.white-section {
-  text-align: center;
-}
-
 /* line 15, ../sass/partials/_content.sass */
 .flex-container {
   display: flex;
+  margin-bottom: 20px;
+}
+/* line 18, ../sass/partials/_content.sass */
+.flex-container:last-child {
+  margin-bottom: 0px;
 }
 
-/* line 18, ../sass/partials/_content.sass */
+/* line 21, ../sass/partials/_content.sass */
 .image-container {
   position: relative;
   margin-right: 20px;
-  margin-top: 20px;
   max-height: 386.6667px;
   overflow: hidden;
 }
-/* line 24, ../sass/partials/_content.sass */
+/* line 26, ../sass/partials/_content.sass */
 .image-container:last-child {
   margin-right: 0px;
 }
-/* line 26, ../sass/partials/_content.sass */
+/* line 28, ../sass/partials/_content.sass */
 .image-container img {
   max-width: 386.6667px;
   transition: all 0.4s ease;
 }
-/* line 29, ../sass/partials/_content.sass */
+/* line 31, ../sass/partials/_content.sass */
 .image-container h5, .image-container p {
   color: #fff;
   width: 100%;
@@ -210,15 +214,15 @@ header {
   transition: opacity 0.15s ease-out;
   display: block;
 }
-/* line 37, ../sass/partials/_content.sass */
+/* line 39, ../sass/partials/_content.sass */
 .image-container h5 {
   top: 40%;
 }
-/* line 39, ../sass/partials/_content.sass */
+/* line 41, ../sass/partials/_content.sass */
 .image-container p {
   top: 50%;
 }
-/* line 41, ../sass/partials/_content.sass */
+/* line 43, ../sass/partials/_content.sass */
 .image-container .image-caption-container {
   position: absolute;
   top: 0;
@@ -231,17 +235,27 @@ header {
   transition: opacity 0.15s ease-out;
   backface-visibility: hidden;
 }
-/* line 53, ../sass/partials/_content.sass */
-.image-container:hover img {
+/* line 55, ../sass/partials/_content.sass */
+.image-container:hover img, .image-container:focus img {
   transform: scale(1.1);
 }
-/* line 55, ../sass/partials/_content.sass */
-.image-container:hover h5, .image-container:hover p {
+/* line 57, ../sass/partials/_content.sass */
+.image-container:hover h5, .image-container:hover p, .image-container:focus h5, .image-container:focus p {
   opacity: 1;
 }
-/* line 57, ../sass/partials/_content.sass */
-.image-container:hover .image-caption-container {
+/* line 59, ../sass/partials/_content.sass */
+.image-container:hover .image-caption-container, .image-container:focus .image-caption-container {
   opacity: 0.7;
+}
+
+/* line 62, ../sass/partials/_content.sass */
+.blue-hero {
+  background: #e1fff5;
+  padding: 80px 0 80px 0;
+}
+/* line 65, ../sass/partials/_content.sass */
+.blue-hero h4 {
+  font-size: 26px;
 }
 
 /* --- Figures --- */
