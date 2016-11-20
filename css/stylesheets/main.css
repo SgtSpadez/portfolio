@@ -180,18 +180,34 @@ header {
 
 /* line 18, ../sass/partials/_content.sass */
 .image-container {
+  position: relative;
   margin-right: 20px;
   margin-top: 20px;
-  max-height: 386.667px;
+  max-height: 386.6667px;
   overflow: hidden;
 }
-/* line 23, ../sass/partials/_content.sass */
+/* line 24, ../sass/partials/_content.sass */
 .image-container:last-child {
   margin-right: 0px;
 }
-/* line 25, ../sass/partials/_content.sass */
+/* line 26, ../sass/partials/_content.sass */
 .image-container img {
   max-width: 386.6667px;
+}
+/* line 28, ../sass/partials/_content.sass */
+.image-container img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+/* line 34, ../sass/partials/_content.sass */
+.image-container .image-caption-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #fff;
 }
 
 /* --- Figures --- */
