@@ -356,13 +356,17 @@ input, textarea {
   font: inherit;
   font-weight: 700;
 }
+/* line 31, ../sass/partials/_form.sass */
+.form-input:focus .form-label, .form-input-large:focus .form-label {
+  color: #000;
+}
 
-/* line 32, ../sass/partials/_form.sass */
+/* line 34, ../sass/partials/_form.sass */
 .form-input {
   padding-bottom: 10px;
 }
 
-/* line 35, ../sass/partials/_form.sass */
+/* line 37, ../sass/partials/_form.sass */
 .form-input-large {
   height: 100px;
   resize: none;
