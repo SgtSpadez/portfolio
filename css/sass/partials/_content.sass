@@ -59,22 +59,40 @@ section
     .image-caption-container
       opacity: 0.7
 
-.blue-hero, .pink-hero
+.figure
+  flex: 1 100%
+  background-image: url("../../images/black-outfit-side.jpg")
+  background-position: top center
+  background-size: cover
+
+.full-container
   padding: 80px 250px 80px 250px
   margin-bottom: 65px
   h4
     font-size: 26px
     font-weight: $black
 
-.blue-hero
+#blue-background
   background: $primary-blue
 
-.pink-hero
+#pink-background
   background-color: $primary-pink
 
 .column
   text-align: left
   padding-right: 100px
-  margin-bottom: 65px
+  flex: 1 100%
   &:last-child
     padding-right: 0px
+
+.contact-info-list
+  display: flex
+  flex-wrap: wrap
+  margin-top: 25px
+
+.contact-info-list-item
+  width: 50%
+  &:nth-child(odd)
+    order: 2
+  &:nth-child(even)
+    order: 1
