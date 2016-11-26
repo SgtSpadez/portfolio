@@ -327,50 +327,59 @@ input, textarea {
 /* line 6, ../sass/partials/_form.sass */
 .contact-form {
   width: 350px;
-  margin: 35px;
+  margin: 45px 45px;
 }
 
-/* line 11, ../sass/partials/_form.sass */
-.form-label, .form-input, .form-input-large {
+/* line 10, ../sass/partials/_form.sass */
+.form-div {
+  position: relative;
   display: block;
+  margin-top: 30px;
+}
+
+/* line 15, ../sass/partials/_form.sass */
+.form-label {
+  position: absolute;
+  top: 5px;
+  cursor: text;
+}
+
+/* line 20, ../sass/partials/_form.sass */
+.form-label, .form-input {
   width: 100%;
   box-sizing: border-box;
 }
 
-/* line 16, ../sass/partials/_form.sass */
-.form-label {
-  position: relative;
-  top: 25px;
-  margin-left: 5px;
+/* line 24, ../sass/partials/_form.sass */
+.form-input + .form-label {
+  padding-left: 5px;
   color: #fff;
   font-weight: 700;
+  transform-origin: center left;
+  transition: all 0.3s;
 }
 
-/* line 23, ../sass/partials/_form.sass */
-.form-input, .form-input-large {
+/* line 31, ../sass/partials/_form.sass */
+.form-input {
   padding-top: 0px;
   padding-left: 5px;
   border-bottom: 2px solid #fff;
-  background-color: #ffd4c3;
+  background-color: transparent;
   color: #fff;
   font: inherit;
   font-weight: 700;
-}
-
-/* line 32, ../sass/partials/_form.sass */
-.form-input {
   padding-bottom: 10px;
 }
-
-/* line 35, ../sass/partials/_form.sass */
-.form-input-large {
-  height: 100px;
-  resize: none;
+/* line 40, ../sass/partials/_form.sass */
+.form-input:focus + .form-label, .form-input:valid + .form-label {
+  top: -25px;
+  transform: scale(0.8);
 }
 
-/* line 39, ../sass/partials/_form.sass */
-.move-label {
-  color: #000;
+/* line 44, ../sass/partials/_form.sass */
+#large-input {
+  height: 100px;
+  resize: none;
 }
 
 /* --- Buttons --- */
@@ -401,8 +410,9 @@ input, textarea {
   font: inherit;
   font-weight: 700;
   color: #fff;
+  cursor: pointer;
 }
-/* line 24, ../sass/partials/_buttons.sass */
+/* line 25, ../sass/partials/_buttons.sass */
 .pink-button:hover, .pink-button:focus {
   background-color: #fff;
   color: #ffd4c3;

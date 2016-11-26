@@ -122,13 +122,20 @@
         </div>
         <div class="column" id="pink-background">
           <form class="contact-form" action="index.html" method="post">
-            <label class="form-label js-label" for="name">Name:</label>
-            <input class="form-input js-input" type="text" name="name" id="name">
-            <label class="form-label js-label" for="email">Email:</label>
-            <input class="form-input js-input" type="text" name="name" id="email">
-            <label class="form-label js-label" for="message">Message:</label>
-            <textarea class="form-input-large js-input" name="message" id="message"></textarea>
-            <input class="pink-button" type="submit" name="submit" value="Submit">
+            <h4>Leave a message and I'll get back to you shortly!</h4>
+            <div class="form-div">
+              <input class="form-input" type="text" name="name" id="name" required>
+              <label class="form-label" for="name">Name:</label>
+            </div>
+            <div class="form-div">
+              <input class="form-input" type="text" name="name" id="email" required>
+              <label class="form-label" for="email">Email:</label>
+            </div>
+            <div class="form-div">
+              <textarea class="form-input" id="large-input" name="message" required></textarea>
+              <label class="form-label" for="large-input">Message:</label>
+              <input class="pink-button" type="submit" name="submit" value="Submit">
+            </div>
           </form>
         </div>
       </div>

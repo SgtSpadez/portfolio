@@ -4,37 +4,43 @@ input, textarea
   border: 0
 
 .contact-form
-  //background-color: #fff
   width: 350px
-  margin: 35px
+  margin: 45px 45px
 
-.form-label, .form-input, .form-input-large
+.form-div
+  position: relative
   display: block
+  margin-top: 30px
+
+.form-label
+  position: absolute
+  top: 5px
+  cursor: text
+
+.form-label, .form-input
   width: 100%
   box-sizing: border-box
 
-.form-label
-  position: relative
-  top: 25px
-  margin-left: 5px
+.form-input + .form-label
+  padding-left: 5px
   color: #fff
   font-weight: $bold
+  transform-origin: center left
+  transition: all 0.3s
 
-.form-input, .form-input-large
+.form-input
   padding-top: 0px
   padding-left: 5px
   border-bottom: 2px solid #fff
-  background-color: $primary-pink
+  background-color: rgba(0, 0, 0, 0)
   color: #fff
   font: inherit
   font-weight: $bold
-
-.form-input
   padding-bottom: 10px
+  &:focus + .form-label, &:valid + .form-label
+    top: -25px
+    transform: scale(0.8)
 
-.form-input-large
+#large-input
   height: 100px
   resize: none
-
-.move-label
-  color: #000
