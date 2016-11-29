@@ -340,7 +340,7 @@ input, textarea {
 /* line 15, ../sass/partials/_form.sass */
 .form-label {
   position: absolute;
-  top: 5px;
+  top: 0;
   cursor: text;
 }
 
@@ -368,15 +368,14 @@ input, textarea {
   color: #fff;
   font: inherit;
   font-weight: 700;
-  padding-bottom: 10px;
 }
-/* line 40, ../sass/partials/_form.sass */
+/* line 39, ../sass/partials/_form.sass */
 .form-input:focus + .form-label, .form-input:valid + .form-label {
   top: -25px;
   transform: scale(0.8);
 }
 
-/* line 44, ../sass/partials/_form.sass */
+/* line 43, ../sass/partials/_form.sass */
 #large-input {
   height: 100px;
   resize: none;
@@ -422,5 +421,7 @@ input, textarea {
 /* line 3, ../sass/partials/_footer.sass */
 footer {
   background-color: #fff;
-  height: 250px;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  text-align: center;
 }
