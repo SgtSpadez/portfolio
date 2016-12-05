@@ -1,6 +1,6 @@
 /* --- Header ---*/
 
-header
+.desktop-header
   background-color: #fff
   padding: 35px 0 35px 0
   text-align: center
@@ -8,9 +8,6 @@ header
   z-index: 20
   width: 100%
   transition: all 0.3s
-
-.shrink-header
-  padding: 15px 0 15px 0
 
 .hide-header
   visibility: hidden
@@ -24,18 +21,52 @@ header
   font-weight: $bold
   letter-spacing: 2px
   text-transform: uppercase
-  padding-bottom: 20px
-  margin: 0 30px 0 30px
+  padding-bottom: 15px
   border-bottom: 2px solid rgba(47, 47, 47, 0)
   transition: all 0.5s
+  @media #{$break-small}
+    opacity: 0
+    display: none
   &:hover
     border-bottom: 2px solid rgba(47, 47, 47, 1)
 
+.main-nav-link
+  font-size: 16px
+  display: inline-block
+  width: 150px
+  box-sizing: border-box
+  padding: 0 25px 0 25px
+  @media #{$break-large}
+    width: 140px
+  @media #{$break-medium}
+    width: 90px
+    padding: 0
+    font-size: 14px
+  @media #{$break-small}
+    opacity: 0
+    display: none
+
 .logo
   margin: 0 85px 0 85px
+  @media #{$break-large}
+    margin: 0 25px 0 25px
 
 .logo-text
   font-weight: $black
   font-size: 28px
   letter-spacing: 8px
+  margin-right: -8px
   text-transform: uppercase
+
+.mobile-handle
+  width: 25px
+  height: 25px
+  margin: 0 auto -25px auto
+  display: none
+  opacity: 0
+  @media #{$break-small}
+    display: block
+    opacity: 1
+
+#handle-bar
+  fill: $primary-grey

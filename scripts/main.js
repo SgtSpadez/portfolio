@@ -1,6 +1,7 @@
 // jQuery
 $(document).ready(function() {
 
+  // Slow scroll effect
   var $root = $('html, body');
   $('a').click(function() {
       $root.animate({
@@ -9,6 +10,7 @@ $(document).ready(function() {
       return false;
   });
 
+  // Hide header effect
   $(function(){
     var lastScrollTop = 0, delta = 5;
     $(window).scroll(function(event){
@@ -26,6 +28,12 @@ $(document).ready(function() {
        }
        lastScrollTop = st;
     });
-});
+  });
+
+  // Mobile menu handle
+    $('mobile-handle').click(function() {
+
+    }
+  }
 
 });
