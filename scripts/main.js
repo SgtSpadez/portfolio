@@ -31,9 +31,9 @@ $(document).ready(function() {
   });
 
   // Mobile menu handle
-    $('mobile-handle').click(function() {
-
-    }
-  }
+    $('.mobile-handle').on('click', function(event) {
+      event.preventDefault();
+      $('.desktop-header').toggleClass('mobile-menu');
+  });
 
 });
