@@ -13,21 +13,28 @@
  </head>
 
  <body>
-   <header class="desktop-header" id="header">
-     <nav class="main-nav">
-      <a class="main-nav-link" href="#home"><div class="main-nav-item">Home</div></a>
-      <a class="main-nav-link" href="#work"><div class="main-nav-item">Work</div></a>
+  <div class="screen-overlay"></div>
+  <header class="desktop-header" id="header">
+    <nav class="main-nav">
+      <a class="main-nav-link" href="#home"><div class="main-nav-text">Home</div></a>
+      <a class="main-nav-link" href="#work"><div class="main-nav-text">Work</div></a>
       <div class="logo"><h1 class="logo-text">Folio</h1></div>
-      <a class="main-nav-link" href="#about"><div class="main-nav-item">About</div></a>
-      <a class="main-nav-link" href="#contact"><div class="main-nav-item">Contact</div></a>
-     </nav>
-     <div class="mobile-handle">
-       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.1 19.1">
-         <path id="handle-bar" d="M50.4 17.5H3.1c-1.2 0-2.2-1-2.2-2.2v0c0-1.2 1-2.2 2.2-2.2h47.3c1.2 0 2.2 1 2.2 2.2v0C52.6 16.5 51.6 17.5 50.4 17.5z"/>
-         <path id="handle-bar" d="M50.4 6.3H3.1c-1.2 0-2.2-1-2.2-2.2v0C0.9 3 1.9 2 3.1 2h47.3c1.2 0 2.2 1 2.2 2.2v0C52.6 5.4 51.6 6.3 50.4 6.3z"/>
-       </svg>
-     </div>
-   </header>
+      <a class="main-nav-link" href="#about"><div class="main-nav-text">About</div></a>
+      <a class="main-nav-link" href="#contact"><div class="main-nav-text">Contact</div></a>
+    </nav>
+    <div class="mobile-handle-container">
+      <nav class="mobile-nav">
+        <a class="mobile-nav-link" href="#home"><div class="mobile-nav-text">Home</div></a>
+        <a class="mobile-nav-link" href="#work"><div class="mobile-nav-text">Work</div></a>
+        <a class="mobile-nav-link" href="#about"><div class="mobile-nav-text">About</div></a>
+        <a class="mobile-nav-link" href="#contact"><div class="mobile-nav-text">Contact</div></a>
+      </nav>
+     <svg class="mobile-handle-svg" height="15px" width="35px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 15">
+        <path id="handle-bar" d="M50.4 17.5H3.1c-1.2 0-2.2-1-2.2-2.2v0c0-1.2 1-2.2 2.2-2.2h47.3c1.2 0 2.2 1 2.2 2.2v0C52.6 16.5 51.6 17.5 50.4 17.5z"/>
+        <path id="handle-bar" d="M50.4 6.3H3.1c-1.2 0-2.2-1-2.2-2.2v0C0.9 3 1.9 2 3.1 2h47.3c1.2 0 2.2 1 2.2 2.2v0C52.6 5.4 51.6 6.3 50.4 6.3z"/>
+      </svg>
+    </div>
+  </header>
   <section id="home">
     <div class="container">
       <div class="hero">
