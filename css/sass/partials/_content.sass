@@ -11,6 +11,14 @@ section
 .hero
   height: 800px
   background-image: url("../../images/white-dress-flamingo.jpg")
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  @media #{$break-small}
+    height: 550px
+    background-position: right
+  @media #{$break-tiny}
+    background-position: -400px
 
 .flex-container
   display: flex
