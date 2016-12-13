@@ -29,6 +29,10 @@ section
   &:last-child
     margin-bottom: 0px
 
+#form-flex
+  @media #{$break-medium}
+    flex-wrap: wrap
+
 .image-container
   position: relative
   margin-right: 20px
@@ -88,12 +92,14 @@ section
     bottom: 0
     top: auto
 
-
 .figure
   flex: 1 100%
   background-image: url("../../images/black-outfit-side.jpg")
   background-position: top center
   background-size: cover
+  @media #{$break-small}
+    height: 200px
+    margin-top: 30px
 
 .full-container
   padding: 80px 0
@@ -101,12 +107,18 @@ section
   h4
     font-size: 26px
     font-weight: $black
+    @media #{$break-small}
+      font-size: 22px
 
 #blue-background
   background: $primary-blue
 
 #pink-background
   background-color: $primary-pink
+  @media #{$break-large}
+    height: 100%
+  @media #{$break-medium}
+    margin-top: 30px
 
 .column
   text-align: left
@@ -114,6 +126,14 @@ section
   flex: 1 100%
   &:last-child
     padding-right: 0px
+  @media #{$break-large}
+    padding-right: 50px
+  @media #{$break-small}
+    padding-right: 0
+
+#column-padding
+  @media #{$break-medium}
+    padding-right: 0
 
 .contact-info-list
   display: flex

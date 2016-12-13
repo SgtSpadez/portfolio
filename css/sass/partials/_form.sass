@@ -6,6 +6,12 @@ input, textarea
 .contact-form
   width: 350px
   margin: 45px 45px
+  @media #{$break-large}
+    width: 280px
+  @media #{$break-medium}
+    width: auto
+  @media #{$break-tiny}
+    margin: 25px 25px
 
 .form-div
   position: relative
