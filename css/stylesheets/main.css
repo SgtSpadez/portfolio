@@ -306,7 +306,7 @@ em {
   top: 0;
   height: 100%;
   width: 100%;
-  z-index: 1;
+  z-index: 15;
   opacity: 0;
   visibility: hidden;
   transition: 0.3s ease-in-out;
@@ -749,14 +749,37 @@ footer {
 
 /* --- Modals --- */
 /* line 3, ../sass/partials/_modals.sass */
-.project-modal-media {
-  width: 400px;
-  padding: 20px;
-  margin: 0 auto;
-  background: #fff;
+.project-modal {
+  position: fixed;
+  z-index: 18;
+  left: 50%;
+  top: 50%;
+  margin-left: -500px;
+  margin-top: -250px;
+  visibility: hidden;
+  opacity: 0;
 }
 
-/* line 9, ../sass/partials/_modals.sass */
+/* line 13, ../sass/partials/_modals.sass */
+.modal-flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 17, ../sass/partials/_modals.sass */
+.project-modal-media {
+  width: 470px;
+  height: 470px;
+  padding: 20px;
+  background: #fff;
+  overflow: hidden;
+}
+/* line 23, ../sass/partials/_modals.sass */
+.project-modal-media:last-child {
+  padding-left: 0;
+}
+
+/* line 26, ../sass/partials/_modals.sass */
 .project-modal-img {
-  width: 100%;
+  width: 470px;
 }
