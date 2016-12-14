@@ -9,6 +9,7 @@
   margin-top: -250px
   visibility: hidden
   opacity: 0
+  transition: visibility 0.3s, opacity 0.3s
 
 .modal-flex-container
   display: flex
@@ -25,3 +26,26 @@
 
 .project-modal-img
   width: 470px
+
+.show-modal
+  visibility: visible
+  opacity: 1
+
+.modal-exit
+  position: absolute
+  right: 20px
+  top: 10px
+  font-size: 20px
+  cursor: pointer
+
+.modal-selector-container
+  position: absolute
+  bottom: 10px
+  left: 708px
+
+.modal-selector, .modal-selector-arrow
+  font-size: 40px
+  margin: 0 3px
+
+.modal-selector
+  line-height: 1px
