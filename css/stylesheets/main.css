@@ -805,16 +805,18 @@ footer {
 .modal-selector-container {
   position: absolute;
   bottom: 10px;
-  left: 708px;
+  left: 699px;
+  cursor: default;
 }
 
-/* line 46, ../sass/partials/_modals.sass */
-.modal-selector, .modal-selector-arrow {
-  font-size: 40px;
+/* line 47, ../sass/partials/_modals.sass */
+.modal-selector-nav {
   margin: 0 3px;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.2s;
 }
-
-/* line 50, ../sass/partials/_modals.sass */
-.modal-selector {
-  line-height: 1px;
+/* line 52, ../sass/partials/_modals.sass */
+.modal-selector-nav:hover, .modal-selector-nav:focus {
+  opacity: 1;
 }

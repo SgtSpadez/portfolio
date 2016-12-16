@@ -72,4 +72,10 @@ $(document).ready(function() {
     $('.screen-overlay').removeClass('is-visible');
   });
 
+  // Select next project modal
+  $('#js-modal-next').on('click', function(event) {
+    event.preventDefault();
+    $('.project-modal').removeClass('show-modal');
+    $('div').next('.project-modal').addClass('show-modal');
+  });
 });
