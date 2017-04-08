@@ -99,7 +99,7 @@ h2, h3, h5 {
 
 /* line 20, ../sass/partials/_typography.sass */
 h2 {
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 65px 0 65px 0;
@@ -160,7 +160,7 @@ em {
 /* line 18, ../sass/partials/_header.sass */
 .main-nav-text, .mobile-nav-text {
   font-family: "Lato", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding-bottom: 15px;
@@ -769,6 +769,13 @@ footer {
 }
 
 /* line 18, ../sass/partials/_modals.sass */
+.project-modal-media-container {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* line 23, ../sass/partials/_modals.sass */
 .project-modal-media {
   width: 470px;
   height: 470px;
@@ -776,23 +783,24 @@ footer {
   background: #fff;
   overflow: hidden;
 }
-/* line 24, ../sass/partials/_modals.sass */
+/* line 29, ../sass/partials/_modals.sass */
 .project-modal-media:last-child {
   padding-left: 0;
 }
 
-/* line 27, ../sass/partials/_modals.sass */
+/* line 32, ../sass/partials/_modals.sass */
 .project-modal-img {
   width: 470px;
 }
 
-/* line 30, ../sass/partials/_modals.sass */
+/* line 35, ../sass/partials/_modals.sass */
 .show-modal {
+  display: inherit;
   visibility: visible;
   opacity: 1;
 }
 
-/* line 34, ../sass/partials/_modals.sass */
+/* line 40, ../sass/partials/_modals.sass */
 .modal-exit {
   position: absolute;
   right: 20px;
@@ -801,7 +809,7 @@ footer {
   cursor: pointer;
 }
 
-/* line 41, ../sass/partials/_modals.sass */
+/* line 47, ../sass/partials/_modals.sass */
 .modal-selector-container {
   position: absolute;
   bottom: 10px;
@@ -809,14 +817,20 @@ footer {
   cursor: default;
 }
 
-/* line 47, ../sass/partials/_modals.sass */
+/* line 53, ../sass/partials/_modals.sass */
 .modal-selector-nav {
   margin: 0 3px;
   opacity: 0.7;
   cursor: pointer;
   transition: all 0.2s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-/* line 52, ../sass/partials/_modals.sass */
+/* line 64, ../sass/partials/_modals.sass */
 .modal-selector-nav:hover, .modal-selector-nav:focus {
   opacity: 1;
 }

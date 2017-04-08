@@ -26,6 +26,7 @@ $(document).ready(function() {
            $('.mobile-nav-link').removeClass('show-element');
            $('.screen-overlay').removeClass('is-visible');
            $('.project-modal').removeClass('show-modal');
+           $('.project-modal-media-container').removeClass('show-modal');
        } else {
           // upscroll
           $("#header").removeClass('hide-element');
@@ -33,6 +34,7 @@ $(document).ready(function() {
           $('.mobile-nav-link').removeClass('show-element');
           $('.screen-overlay').removeClass('is-visible');
           $('.project-modal').removeClass('show-modal');
+          $('.project-modal-media-container').removeClass('show-modal');
        }
        lastScrollTop = st;
     });
@@ -54,28 +56,54 @@ $(document).ready(function() {
     $('.mobile-nav-link').removeClass('show-element');
     $('.screen-overlay').removeClass('is-visible');
     $('.project-modal').removeClass('show-modal');
+    $('.project-modal-media-container').removeClass('show-modal');
   });
 
   // Show project modal
-  $('.js-modal-button').on('click', function(event) {
+  $('.js-image-container').on('click', function(event) {
     event.preventDefault();
-    var modalId = $(this).parent('div').attr('id');
-    $('.project-modal').removeClass('show-modal');
+    var modalId = $(this).attr('id');
+    $('.project-modal').addClass('show-modal');
+    $('#' + modalId + '-media').addClass('show-modal');
     $('.screen-overlay').addClass('is-visible');
-    $('#' + modalId).addClass('show-modal');
   });
 
   // Exit project modal
   $('.js-modal-exit').on('click', function(event) {
     event.preventDefault();
     $('.project-modal').removeClass('show-modal');
+    $('.project-modal-media-container').removeClass('show-modal');
     $('.screen-overlay').removeClass('is-visible');
   });
 
-  // Select next project modal
+  // 'Next' project modal
   $('#js-modal-next').on('click', function(event) {
     event.preventDefault();
-    $('.project-modal').removeClass('show-modal');
-    $('div').next('.project-modal').addClass('show-modal');
+    var modalPosition = $('.project-modal-media-container.show-modal').attr('id').charAt(8);
+    var modals = $('.project-modal-media-container').length;
+    modalPosition++;
+    if (modalPosition > modals) {
+      modalPosition = 1;
+      $('.project-modal-media-container').removeClass('show-modal');
+      $('#project-' + modalPosition + '-media').addClass('show-modal');
+    } else {
+      $('.project-modal-media-container').removeClass('show-modal');
+      $('#project-' + modalPosition + '-media').addClass('show-modal');
+    };
+  });
+
+  // 'Back' project modal
+  $('#js-modal-back').on('click', function(event) {
+    event.preventDefault();
+    var modalPosition = $('.project-modal-media-container.show-modal').attr('id').charAt(8);
+    modalPosition--;
+    if (modalPosition < 1) {
+      modalPosition = 6;
+      $('.project-modal-media-container').removeClass('show-modal');
+      $('#project-' + modalPosition + '-media').addClass('show-modal');
+    } else {
+      $('.project-modal-media-container').removeClass('show-modal');
+      $('#project-' + modalPosition + '-media').addClass('show-modal');
+    };
   });
 });
